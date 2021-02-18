@@ -17,28 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login/Login Berhasil'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.delay(4)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_profile'))
 
-WebUI.navigateToUrl('https://pasarid.tcd-dev.id/')
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_logout'))
 
-WebUI.waitForPageLoad(5)
+WebUI.delay(4)
 
-WebUI.acceptAlert(FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_profile'))
 
-WebUI.click(findTestObject('Page_Pasar.id/btn_profile'))
+WebUI.verifyElementNotPresent(findTestObject('Page_Pasar.id/btn_logout'), 3, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Pasar.id/btn_masuk'))
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Page_Pasar.id/input_email'), 'anamwahid87@gmail.com')
-
-'Password = Anam_1506'
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Pasar.id/input_password'), 'AxgbTqednCBPIJICH08PXA==')
-
-WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_submit_login'))
+WebUI.closeBrowser()
 

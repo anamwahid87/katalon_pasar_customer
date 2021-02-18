@@ -25,20 +25,20 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl('https://pasarid.tcd-dev.id/')
 
-WebUI.waitForPageLoad(5)
-
-WebUI.acceptAlert(FailureHandling.OPTIONAL)
-
 WebUI.click(findTestObject('Page_Pasar.id/btn_profile'))
 
 WebUI.click(findTestObject('Page_Pasar.id/btn_masuk'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Page_Pasar.id/input_email'), 'anamwahid87@gmail.com')
+'Email Kosong'
+WebUI.setText(findTestObject('Page_Pasar.id/input_email'), '')
 
 'Password = Anam_1506'
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Pasar.id/input_password'), 'AxgbTqednCBPIJICH08PXA==')
 
 WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_submit_login'))
+
+WebUI.closeBrowser()
+
 
