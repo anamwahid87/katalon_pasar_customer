@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_ok</name>
+   <tag></tag>
+   <elementGuidId>9fcbb533-5199-450a-9603-73b9f5dd1e67</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[1]/div/div[1]/div[2]/div[2]/div/div/p/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[1]/div/div[1]/div[2]/div[2]/div/div/p/a</value>
+   </webElementProperties>
+</WebElementEntity>
