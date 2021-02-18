@@ -23,9 +23,11 @@ WebUI.maximizeWindow()
 
 WebUI.delay(2)
 
-WebUI.navigateToUrl('https://pasarid.tcd-dev.id/')
+WebUI.navigateToUrl(GlobalVariable.url_dev)
 
 WebUI.waitForPageLoad(5)
+
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_ok'), FailureHandling.OPTIONAL)
 
 WebUI.acceptAlert(FailureHandling.OPTIONAL)
 

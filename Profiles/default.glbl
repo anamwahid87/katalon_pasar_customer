@@ -4,4 +4,14 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://pasarid.tcd-dev.id/'</initValue>
+      <name>url_dev</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'pasar.id'</initValue>
+      <name>url_prod</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -23,7 +23,7 @@ WebUI.maximizeWindow()
 
 WebUI.delay(2)
 
-WebUI.navigateToUrl('https://pasarid.tcd-dev.id/')
+WebUI.navigateToUrl(GlobalVariable.url_dev)
 
 WebUI.click(findTestObject('Page_Pasar.id/btn_profile'))
 
