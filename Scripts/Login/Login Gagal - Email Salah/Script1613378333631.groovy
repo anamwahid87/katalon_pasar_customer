@@ -33,7 +33,7 @@ WebUI.delay(1)
 
 WebUI.setText(findTestObject('Page_Pasar.id/input_email'), GlobalVariable.email_invalid_prod)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Pasar.id/input_password'), GlobalVariable.password_valid_prod)
+WebUI.setText(findTestObject('Object Repository/Page_Pasar.id/input_password'), GlobalVariable.password_valid_prod)
 
 WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_submit_login'))
 
