@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div/div/form/div[2]/div[4]/button</value>
+         <value>//*[@id=&quot;root&quot;]/div/div/div/form/div[2]/div[4]/button[count(. | //*[@class = 'btn btn-secondary btn-block']) = count(//*[@class = 'btn btn-secondary btn-block'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,5 +18,12 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;root&quot;]/div/div/div/form/div[2]/div[4]/button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-secondary btn-block</value>
    </webElementProperties>
 </WebElementEntity>

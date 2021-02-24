@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Login - Logout</name>
+   <name>New Login</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,11 +10,11 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>dc5f6137-2adf-4e9f-92e1-66038198d31d</testSuiteGuid>
+   <testSuiteGuid>81df8518-3c30-4670-adc7-b514dc0e8f4a</testSuiteGuid>
    <testCaseLink>
-      <guid>9c2225b1-86a2-4917-8e3f-8ccc4b0ddb71</guid>
+      <guid>fb9ea18a-d295-4b71-ad22-157146fddbb9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/Login Berhasil - Logout</testCaseId>
+      <testCaseId>Test Cases/test/login</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

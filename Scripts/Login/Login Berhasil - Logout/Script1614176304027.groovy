@@ -35,20 +35,51 @@ WebUI.delay(2)
 WebUI.navigateToUrl(GlobalVariable.url_prod)
 
 WebUI.waitForPageLoad(5)
+WebUI.takeScreenshot()
 
 WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_ok'), FailureHandling.OPTIONAL)
 
 WebUI.acceptAlert(FailureHandling.OPTIONAL)
 
+'Klik Profile'
 WebUI.click(findTestObject('Page_Pasar.id/btn_profile'))
+WebUI.takeScreenshot()
 
+'Klik Masuk'
 WebUI.click(findTestObject('Page_Pasar.id/btn_masuk'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
+'Input Email'
 WebUI.setText(findTestObject('Page_Pasar.id/input_email'), GlobalVariable.email_valid_prod)
 
+'Input Password'
 WebUI.setText(findTestObject('Object Repository/Page_Pasar.id/input_password'), GlobalVariable.password_valid_prod)
 
-WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_submit_login'))
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_ok'), FailureHandling.OPTIONAL)
+WebUI.takeScreenshot()
+
+WebUI.delay(2)
+
+'Berhasil Login'
+WebUI.click(findTestObject('Object Repository/New Object/Page_Pasar.id/button_Login')) 
+WebUI.takeScreenshot()
+
+WebUI.waitForPageLoad(5)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_profile'))
+
+'Klik Logout'
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_logout'))
+
+WebUI.delay(4)
+
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_profile'))
+
+'Make sure there is no logout button'
+WebUI.verifyElementNotPresent(findTestObject('Page_Pasar.id/btn_logout'), 3, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.closeBrowser()
 

@@ -16,20 +16,50 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
-WebUI.callTestCase(findTestCase('Login/Login Berhasil'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_profile'))
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_logout'))
+WebUI.delay(2)
 
-WebUI.delay(4)
+WebUI.navigateToUrl(GlobalVariable.url_prod)
 
-WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_profile'))
+WebUI.waitForPageLoad(5)
+WebUI.takeScreenshot()
 
-WebUI.verifyElementNotPresent(findTestObject('Page_Pasar.id/btn_logout'), 3, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_ok'), FailureHandling.OPTIONAL)
 
-WebUI.closeBrowser()
+WebUI.acceptAlert(FailureHandling.OPTIONAL)
+
+'Klik Profile'
+WebUI.click(findTestObject('Page_Pasar.id/btn_profile'))
+WebUI.takeScreenshot()
+
+'Klik Masuk'
+WebUI.click(findTestObject('Page_Pasar.id/btn_masuk'))
+
+WebUI.waitForPageLoad(5)
+
+'Input Email'
+WebUI.setText(findTestObject('Page_Pasar.id/input_email'), GlobalVariable.email_valid_prod)
+
+'Input Password'
+WebUI.setText(findTestObject('Object Repository/Page_Pasar.id/input_password'), GlobalVariable.password_valid_prod)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_ok'), FailureHandling.OPTIONAL)
+
+'Berhasil Login'
+WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_submit_login'))
 
