@@ -11,7 +11,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'pasar.id'</initValue>
+      <initValue>'https://pasar.id'</initValue>
       <name>url_prod</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'divisi.ddb@gmail.com'</initValue>
+      <name>email_valid_prod</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'divisi.ddb@ddb'</initValue>
+      <name>email_invalid_prod</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'P@ssword123'</initValue>
+      <name>password_valid_prod</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'12345678'</initValue>
+      <name>password_invalid_prod</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

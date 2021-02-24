@@ -23,7 +23,7 @@ WebUI.maximizeWindow()
 
 WebUI.delay(2)
 
-WebUI.navigateToUrl(GlobalVariable.url_dev)
+WebUI.navigateToUrl(GlobalVariable.url_prod)
 
 WebUI.click(findTestObject('Page_Pasar.id/btn_profile'))
 
@@ -31,10 +31,9 @@ WebUI.click(findTestObject('Page_Pasar.id/btn_masuk'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Page_Pasar.id/input_email'), 'anamwahid1506@gmail.com')
+WebUI.setText(findTestObject('Page_Pasar.id/input_email'), GlobalVariable.email_invalid_prod)
 
-'Password = Anam_1506'
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Pasar.id/input_password'), 'AxgbTqednCBPIJICH08PXA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Pasar.id/input_password'), GlobalVariable.password_valid_prod)
 
 WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_submit_login'))
 
