@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Login Berhasil'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(4)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_Pasar.id/btn_profile'))
 
